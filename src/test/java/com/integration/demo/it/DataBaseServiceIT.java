@@ -67,15 +67,4 @@ import com.github.dockerjava.api.model.Ports;
 		    System.out.println("Testing URL: " + url);
 	     assertTrue(microContainer.isRunning());
 	  }
-	  
-	 @Test
-	 void test() throws IOException {
-		 System.out.println("DataBaseServiceIT.test()"+ warFile.getSize());
-		 
-		 Path imageFilePath = Paths.get("build","libs","demo-0.0.1-SNAPSHOT.war").toAbsolutePath();
-		    FileChannel imageFileChannel = FileChannel.open(imageFilePath);
-
-		    long imageFileSize = imageFileChannel.size();
-		 System.out.println(imageFileSize);
-	 }
 }
